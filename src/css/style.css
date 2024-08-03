@@ -38,8 +38,8 @@ h1, h2 {
 }
 
 img {
-  width: 100%; /* full-width images */
-  height: 200px; /* fixed height */
+  max-width: 100%; /* prevent stretching beyond container width */
+  height: auto; /* maintain aspect ratio */
   object-fit: cover;
   border-radius: 10px; /* rounded corners */
 }
@@ -67,7 +67,7 @@ button:hover {
     margin-bottom: 10px;
   }
   img {
-    height: 150px; /* smaller image height on smaller screens */
+    max-height: 150px; /* smaller image height on smaller screens */
   }
 }
 
@@ -79,6 +79,6 @@ button:hover {
     margin-bottom: 5px;
   }
   img {
-    height: 100px; /* even smaller image height on smallest screens */
+    max-height: 100px; /* even smaller image height on smallest screens */
   }
 }
